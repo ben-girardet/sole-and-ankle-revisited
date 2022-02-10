@@ -37,7 +37,7 @@ const Wrapper = styled.div`
 
   @media ${(QUERIES.laptopAndDown)} {
     
-    background-color: ${COLORS.gray900};
+    background-color: ${COLORS.gray[900]};
     height: 4px;
 
     & > * {
