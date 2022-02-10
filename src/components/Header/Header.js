@@ -29,6 +29,8 @@ const Header = () => {
           <NavLink href="/women">Women</NavLink>
           <NavLink href="/kids">Kids</NavLink>
           <NavLink href="/collections">Collections</NavLink>
+          <NavLink href="/sale">Mega Sale</NavLink>
+          <NavLink href="/new">Old&nbsp;Releases</NavLink>
         </Nav>
         <Side>
           <MobileIconButton>
@@ -66,7 +68,14 @@ const MainHeader = styled.div`
 const Nav = styled.nav`
   display: flex;
   gap: 48px;
+  gap: clamp(
+    1rem,
+    6.7vw - 4.25rem,
+    2.7rem
+  );
   margin: 0px 48px;
+  overflow-x: auto;
+  padding-bottom: 6px;
 
   @media ${QUERIES.laptopAndDown} {
     display: none;
